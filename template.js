@@ -1,0 +1,1 @@
+/*	template.js	just an empty script to prevent not found error*/

@@ -1,0 +1,628 @@
+/**
+ * @version $Id: template.css
+ * @author SiteGround
+ * @package Joomla
+ * @copyright Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+html {height:100%;}	
+/* EvZ: disabled (since it broke iFrameHeight() for FireFox)
+body,html {height:100%;}
+*/
+body{background:#ffffff;font: 400 12px/1.3em Tahoma, Verdana, Helvetica, Arial;color:#777;margin:0;padding:0}
+.clr{clear:both;overflow:hidden;font-size:0;line-height:0;}
+ul{list-style:none;margin:0;padding:0}
+a,img{outline:none;margin:0;padding:0;border:none;}
+a:link, a:visited { color:#777;text-decoration:none;}
+a:hover, a:active, a:focus { color:#3385AB; }
+form { padding:0;margin:0; }
+header, nav, menu, section, aside, article, footer { display:block; }
+
+h1,h2,h3,h4,h5,h6 { margin:0 0 20px;font-family: 'Droid Serif', serif; color:#666;line-height:normal; }
+
+h1 { font-size:24px;}
+h2 { font-size:20px; color:#3385ab;}
+h3 { font-size:18px; color:#3385ab;font-family: 'PT Sans Narrow', serif;}
+h4 { font-size:14px;}
+h5 { font-size:12px;}
+h6 { font-size:11px;}
+
+
+iframe {border:none;}
+dl dd {
+	padding:0 0 0 10px;
+	margin:0;
+}
+
+fieldset { border:none;margin:0;padding:0;}
+input, textarea, button { border: 1px solid #D5D5D5;color: #666666;background:#fff;}
+button { background:#f8f8f8; }
+
+p { margin:0 0 10px; }
+
+.page_bg { background: #f8f8f8 url(bg.png) repeat-x top center; }
+.page { min-height: 100%; }
+
+.wrapper { padding-bottom: 120px; }
+
+.main { width:960px;margin:0 auto; }
+.top { margin:0 auto;width:960px;height:38px}
+.top .menu { height:26px;padding:6px 0;}
+.top .menu li { float:left;height:26px;margin:0 10px 0 0;font-size:12px;}
+.top .menu a { float:left;background: transparent url(top_menu_r_bg.png) no-repeat top right;text-decoration:none;}
+.top .menu a span { float:left;height:26px;padding:0 10px;color:#fff;line-height:25px;background: transparent url(top_menu_l_bg.png) no-repeat top left;cursor:pointer;}
+
+header { background: transparent url(header.jpg) no-repeat top center;}
+header div.logo { width:960px;height:220px;margin:0 auto;position:relative;}
+
+header h1 { position:absolute;top:56px;left:30px;padding:4px;font-family: 'Chewy', serif;color:#f2f2f2; font-size: 60px; font-style: normal; font-weight: 400; text-shadow: 1px 1px #000; line-height: 1.2;margin:0;}
+.twitter_icon { position:absolute;top:20px;right:0;width:220px;height:150px;background: transparent url(twitter_icon.png) no-repeat top left;}
+.followers { position:absolute;top:28px;left:17px;font-family: 'Chewy', serif;color:#f7ebf9; font-size: 30px; font-weight: 400; text-shadow: 1px 1px #7f368a;width:80px;line-height:normal;text-align:center;}
+
+#breadcrumbs { position:absolute;bottom:30px;left:0;}
+
+.leftcol { float:left;width:202px;margin:0 20px 0 0;overflow:hidden; }
+.maincol { float:left;width:738px;overflow:hidden; }
+
+.leftcol .first_mod div div div { background: transparent url(module_t_bg_first.png) no-repeat top center; }
+.leftcol div div div .custom { background:none;padding:0 20px; }
+
+.leftcol .first_mod div div div div	/*	EvZ */
+{ background:none;margin:0;padding:0;}
+
+.separator { font-size:12px;padding:20px 0 0;display:block;color:#505050;font-size:12px;font-weight:700; }
+
+.module_menu,
+.module { float:left;width:100%;margin:0 0 20px;}
+
+.module_menu div,
+.module div
+{ background: transparent url(module_bg.png) repeat-y top center;}
+
+.module_menu div div,
+.module div div
+{ background: transparent url(module_b_bg.png) no-repeat bottom center; }
+
+.module_menu div div div,
+.module div div div
+{ padding:10px 1px 20px;background: transparent url(module_t_bg.png) no-repeat top center; }
+/*	EvZ: set left/right padding to 1px (was 0) */
+
+.module_menu div div div div,
+.module div div div div
+{ background:none;margin:0;padding:0;}
+
+.module_menu div div div h3,
+.module div div div h3
+{ margin:0;padding:0 20px 10px;color:#505050;font-size:14px;font-weight:700;line-height:20px;font-family: 'Droid Serif', serif;}
+
+/*	EvZ: purple for newsFlash title */
+.module .newsflash-title
+{ color:#6A0888;}
+/*	EvZ: force some more left/right padding on modules that don't */
+.module .newsflash,
+.module .mod-whosonline,
+.module .mod-login-logout
+{ padding-left:5px !important; padding-right:5px !important;}
+
+.module_menu .menu,
+.module .menu
+{ margin:0 20px 0 10px; }
+
+.module_menu .menu li,
+.module .menu li
+{ padding:0 0 0 10px;line-height:20px;}
+
+.module_menu .menu li a,
+.module .menu li a
+{ display:block;}
+
+.module_menu .menu li a span,
+.module .menu li a span
+{ display:block;padding:0 0 0 10px;background: transparent url(arrow1.gif) no-repeat left 7px;cursor:pointer;}
+
+.latestnews li a{padding:0 0 0 10px;background: transparent url(arrow1.gif) no-repeat left 7px;}
+.latestnews li {margin: 0 0 0 20px;}
+
+#login-form {
+	margin:0;
+	padding:0;
+}
+
+fieldset.userdata {
+	border:none;
+	margin:0 20px;
+	padding:0;
+	height:150px;
+	position:relative;
+}
+
+#login-form ul { margin:20px 20px 0; }
+
+fieldset.userdata label {display:block;line-height:16px; }
+#form-login-remember label { display:inline; }
+
+fieldset.userdata input { border:1px solid #d5d5d5;background:none;color:#666;width:158px; }
+fieldset.userdata input.button { position:absolute;bottom:0;left:0;width:80px;}
+
+#form-login-username,
+#form-login-password,
+#form-login-remember { margin:0 0 10px;overflow:hidden; }
+
+#modlgn-remember { float:none;margin:0 0 0 10px;border:none;background:none;width:auto; }
+
+
+.module .search { margin: 0 20px;position:relative; }
+.search label { display:none; }
+#mod-search-searchword {						/*	EvZ: original, good for regular module */
+	border:1px solid #d5d5d5;background:none;color:#666;width:160px;
+}
+.module .search .button { position:absolute;right:0;top:0;text-indent:-9999px;width:20px;height:20px;background: transparent url(search_bg.png) no-repeat center center;}
+
+
+/* maincol */
+.maincol h2,
+.maincol h2 a {
+	color:#555;
+  	font-size: 26px;
+  	line-height:normal;
+  	text-shadow:1px 1px #fff;
+  	margin:0 0 10px;
+}
+
+.items-leading,
+.category-desc
+{
+	margin:0 0 20px;
+}
+
+/* items row */
+/* J4: blog items */
+.items-row .item ,
+.blog-items:not(.items-leading) .blog-item
+{	margin:0 0 30px 0;text-align:justify; background:#eeeeee;padding:10px;
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.items-row .item h2,
+.items-row .item h2 a,
+.blog-items:not(.items-leading) .blog-item h2,
+.blog-items:not(.items-leading) .blog-item h2 a { font-size:18px;}
+.item .readmore,
+.blog-item .readmore { text-align:right;margin:0;}
+.item .readmore a,
+.blog-item .readmore a { color:#3385ab;font-weight:700; }
+
+
+.actions { overflow:hidden;margin:0 0 10px;}
+.actions li { float:left; }
+.actions li img { float:left;margin:0 6px 0 0; }
+
+
+.category-desc img { margin:0 10px 4px }
+.category-desc a, .category-desc a:link, .category-desc a:visited { color:#3385AB;text-decoration:underline;}
+.image-left { float:left;margin:0 10px 4px 0; }
+.image-right { float:left;margin:0 0 4px 10px; }
+
+
+.item-title { font-size:12px; }
+.main .categories-list ul li {
+    padding: 5px;
+}
+
+.category-desc {
+    line-height: 1.7em;
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+.category-desc p { line-height:40px; }
+.pagination { overflow:hidden;padding:10px 0; }
+.pagination .counter { margin:0; }
+
+.current > a > span {
+	color:#3385ab;
+}
+
+.pagination ul { overflow:hidden;}
+.pagination ul li {
+	float:left;
+	margin:0 6px 0 0;
+}
+
+.pagination .pagenav {
+	display:block;
+	background:#fff;
+	margin:0 4px 0 0;padding:2px 6px;
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    margin:10px 0;
+}
+
+
+.pagenav .pagenav-prev { float:left; }
+.pagenav .pagenav-next { float:right; }
+.pagenav-prev, .pagenav-next {
+	background:#fff;
+	margin:0 4px 0 0;padding:2px 6px;
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    margin:10px 0;
+}
+
+/* end maincol */
+
+/* tables */
+
+table { border-collapse:collapse }
+
+/* EvZ: changed 1px to 0px, removed  !important  so it can be overruled */
+table, table th, table td { border:solid 0px #d5d5d5; }	
+
+
+table.weblinks th,
+table.newsfeeds th,
+table.category th,
+table.jlist-table th
+{
+	background:#dedede;
+	color:#777;
+}
+
+
+table.weblinks,
+table.category
+{ margin:10px 10px 20px 0px;width:99%; }
+
+table.weblinks td
+{ border-collapse:collapse; }
+
+table.weblinks td,
+table.category td
+{ padding:7px; }
+
+table.weblinks th,
+table.category th
+{ padding:7px;text-align:left; }
+
+td.num
+{ vertical-align:top;text-align:left; }
+
+td.hits
+{ vertical-align:top;text-align:center; }
+
+td p
+{ margin:0;line-height:1.3em; }
+
+.filter
+{ margin:10px 0; }
+
+.display-limit,
+.filter
+{ text-align:right;margin-right:7px; }
+
+table.padded tr td { padding: 4px 10px;}
+
+/* ++++++++++++++  category table  ++++++++++++++ */
+
+table.category th a img
+{ padding:2px 10px; }
+
+.filter-search
+{ float:left; }
+.filter-search .inputbox
+{ width:6em; }
+
+legend.element-invisible
+{
+        position:absolute;
+        /* need margin top and left doesn't work for the legend element */
+        margin-left:-3000px;
+        margin-top:-3000px;
+        height:0px;
+}
+
+.cat-items
+{ margin-top:20px; }
+
+#contact-slider .panel {
+	background:#fff;
+	margin:0 0 10px 0;
+	padding:10px;
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    margin:10px 0;
+}
+
+#contact-slider .panel h3 { margin:0; }
+#contact-slider .panel h3 a { font-size:18px;line-height:normal; }
+#contact-slider .panel .pane-slider { padding:10px 0 0 0; }
+#contact-slider .panel .pane-slider div { padding:10px 0 0 0;overflow:hidden; }
+
+.contact-email label
+{ float:left;width:140px; }
+
+#member-registration label { display:block; }
+#member-registration legend { font-size:20px; }
+
+#member-registration dd { padding:0;margin:0 0 10px; }
+
+.contact-links li { line-height:20px; }
+
+
+/* */
+#jform_email-lbl { width:200px;float:left; }
+#article-index li { line-height:20px; }
+
+.maincol li {line-height:20px;}
+.maincol .menu li,
+#article-index li,
+.maincol .latestnews li,
+.maincol .relateditems li,
+.maincol .categories-module li
+{
+	padding:0 10px 0 20px;
+	line-height:20px;
+	background: transparent url(arrow-1.png) no-repeat top left;
+}
+
+#article-index ul,
+.maincol .menu { margin:10px 0; }
+
+.stats-module dt {
+    float: left;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+}
+
+.maincol .login,
+.maincol .registration,
+#user-registration {
+	background:#fff;
+	margin:0 0 10px 0;
+	padding:20px 80px 20px 20px;
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    margin:0 0 10px 0;
+    background: #fff url(login_bg.png) no-repeat center right;
+}
+
+.maincol .login label { float:left;width:100px;}
+.maincol .login .login-fields {overflow:hidden;margin:0 0 10px;}
+
+footer { margin-top:-120px;height: 90px;padding:30px 0 0 0;background: #1b2226 url(footer_bg.png) repeat-x center top;}
+footer .footer { margin:0 auto;overflow:hidden;width:960px;height:50px;padding:20px 0;color:#b7adb7;background: transparent url(footer_bg2.png) no-repeat center top;}
+footer .footer a { color:#cbc1cb;}
+
+.error {
+	background:#fdcdc9;
+	margin:0 0 20px 0;
+	padding:10px;
+	border:none;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#system-message { margin:0; }
+#system-message dt.warning{ color:#be4e4c;margin:0 0 10px;font-size:16px;font-weight:700; }
+#system-message dd.warning li { line-height:20px;background: transparent url(arrow-2.png) no-repeat left top;padding:0 0 0 20px; }
+
+.tip-wrap {
+	background:#fff;
+	margin:0 0 10px 0;
+	padding:10px;
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+input.inputbox, textarea.inputbox  {background: #ebebeb; background: 1px solid #a3a3a3; margin: 0 0 10px 0; color: #000;}
+.input-small { display: block; margin: 2px 0 15px 0;}
+.control-group { margin: 0 0 0 10px !important; }
+btn { margin: 20px 0 0 0; }
+.control-group, .controls, .input-prepend, .input-append, .userdata{ background: none !important; }
+.btn-primary { margin: 20px 0 0 0 !important; }
+
+
+/*****************************************/
+/*** added by EvZ                      ***/
+/*****************************************/
+
+/*	used by the template itself - or from the old one - but not (properly) defined */
+.pull-left {
+	float: left;
+}
+.pull-right,
+.float-end,
+table.contenttoc {
+	float: right;
+}
+.article-index,
+table.contenttoc
+{
+	border: 1px solid #e5e5e5; 
+	background-color: #fcfcfc;
+	padding: 4px 0px;	/* top&bottom left&right */
+	margin: 0 0 4px 8px;	/* top right bottom left */
+	border-radius: 6px;		/* rounded corner works for div, not for table */
+	/* really need these too? */
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+table.contenttoc td {
+	padding: 2px 10px;
+}
+table.contenttoc th {
+	padding: 5px 10px 3px;	/* top left&right bottom */
+	font-weight: bold;
+	text-align: left;
+}
+/* create some (horizontal) space between "Edit Published Article"-link and "Article Index" */
+.icons .float-end {
+	margin: 0 0 4px 8px;	/* top right bottom left */
+}
+/* create some (horizontal) space between "Article Index" header and border, decrease bottom margin, standard color */
+.article-index h3 {
+	margin-bottom: 16px;
+	margin-left: 8px;
+	color:#666;
+}
+
+/* throw coins dialog */
+table#linesTable th {
+	 padding-bottom: 6px;
+}
+
+
+/*	EvZ - MindSports' spinning logo */
+#minilogo {	
+	float: right;
+	margin-right: 27px;
+	margin-top: 50px;		/*	(header image height (197) - logo image height (96)) / 2 */
+/*	position: absolute;			so the image doesn't get clipped by the header height = 91px */
+}
+
+/*	show the breadcrumbs horizontally */
+#breadcrumbs li {
+	list-style-type: none;		/*	hide bullet */
+	float: left;
+	margin: 0 2px 0 0;
+	padding: 0;
+}
+/*	J4: add separator after each item except the last (is .active and unanchored) one */
+#breadcrumbs .breadcrumb-item:not(.active) a::after {
+	content: " " url(arrow.png) " ";
+}
+
+.maincol ul {list-style:initial; list-style-type:square; padding:0 10px 0 30px;}	/*	EvZ: restore default list-style for all articles (type and padding is custom) */
+.maincol .article-index ul,				/*	EvZ: but hide them again for article index, edit link, prev/next links */
+.maincol .btn-group ul,
+.maincol .pager ul,
+.maincol ul.pager {
+	list-style: none;
+	padding: 0 10px 0 10px;
+}
+
+.maincol .article-index li:first-child {				/*	EvZ: make first article index item bold, same as contenttoc th */
+	font-weight: bold;
+}
+
+
+.scroll_overflow {
+	overflow: auto;
+	border: 1px solid #dadada;
+
+	/*	because of an apparent bug in Safari, 
+			which bases the width of the scrollbars on the div's contents instead of its surroundings,
+		we set a fixed width for this class.
+		FireFox doesn't need this trick.
+		This only looks good, because it's tailored to the fixed width template!
+		Any wider (than 697px) and IE6 puts the contents below the left navigation menu's.
+	*/
+	width:696px;
+}
+
+input.button, button {
+	cursor: pointer; /* hand-shaped cursor */
+	padding: 3px 5px;	/* top&bottom left&right */
+	background:#ebebeb;		/*	a tad darker than page bg; lighter would be: #fcfcfc */
+	border-radius: 4px;
+}
+input.button:hover, input.button:active, input.button:focus, button:hover, button:active, button:focus { color:#3385AB; }	/* same as a:hover */
+
+input.button[disabled], button[disabled] {
+	cursor: default;
+	color: #D5D5D5;
+}
+
+
+/*	I Ching Connexion (Divination) stuff, so it'll adapt better to the iPhone
+*/
+input#inputNewQuest, input#inputQuest {
+	width: 400px;
+}
+
+.size2screen {
+	width: auto;
+}
+
+/*	set label and input field on the same line - better for EBR guestbook */
+.form-horizontal .control-label, .form-horizontal .controls {display:inline; }
+
+
+/*	old template classes used by Players Section files */
+.componentheading, .contentheading { 		/*	like h1-h7 (sort of) */
+	font-family: 'Droid Serif', serif; 
+	color:#555;
+	line-height:normal; 
+	font-weight: bold;
+}
+
+.componentheading {		/*	like .maincol h2 (sort of) */
+  	font-size: 24px;
+  	text-shadow:1px 1px #fff;
+  	margin:0 0 10px;		/* top right&left bottom  */
+}
+
+.contentheading { 
+	font-size:16px; 
+	margin:0 0 6px;
+}
+
+/* new for player's linked names above Players Section game: a tad bigger, with margin */
+a.contentpagetitle[href^="mailto:"] {		/* be as specific as possible */
+	font-size: 14px; 
+	line-height: 2;		/* 2x font-size, to create some vertical margin */
+}
+
+
+/*	mods on previous template siteground-j15-22 */
+
+.indent {
+	padding-left: 30px;
+}
+
+#search {	
+/*	width: 300px;
+	height: 30px;
+*/
+	text-align: right;
+	position:absolute;bottom:30px;right:0;	/* same line as breadcrumbs, but on the right */
+}
+#search #mod-search-searchword {			/*	EvZ: custom, better for header */
+	border-color:#703870;
+	font-size:12px; color:#777; 			/* same as breadcrumbs */
+}
+#search #mod-search-searchword:focus {
+	color:#aaa;
+}
+
+.visually-hidden  { display:none; } 			/* Joomla 4 search prompt */
+
+
+/*	end of added by EvZ */
